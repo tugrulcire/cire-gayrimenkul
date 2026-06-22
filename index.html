@@ -2,66 +2,37 @@
 lang="tr"> <head>
     <meta 
     charset="UTF-8"> 
-    <title>AHMET CİRE 
-    G.Y.D 
-    MAĞAZA</title> 
+    <title>Cire 
+    Emlak</title> 
     <script 
     src="https://cdn.tailwindcss.com"></script>
 </head> <body 
-class="bg-gray-100 
-p-4">
-    <h1 class="text-xl 
+class="bg-gray-100">
+    <div class="h-2 
+    w-full 
+    bg-red-600"></div> 
+    <h1 
+    class="text-3xl 
     font-bold 
     text-center 
-    mb-4">AHMET CİRE 
-    G.Y.D MAĞAZA</h1> 
-    <div id="ilanlar" 
-    class="space-y-4">
-        </div> 
-    <script>
-        const ilanlar 
-        = [
-            { baslik: 
-            "HACIAKİF'DE 
-            SATILIK 
-            2+1", 
-            fiyat: 
-            "2.590.000 
-            TL" }, { 
-            baslik: 
-            "MÜFTÜ 
-            MAHALLESİ 
-            SATILIK 
-            ARAKAT", 
-            fiyat: 
-            "3.549.000 
-            TL" }, { 
-            baslik: 
-            "KİRALIK 
-            GÖL 
-            MANZARALI 
-            2+1", 
-            fiyat: 
-            "18.000 
-            TL" }
-        ]; const 
-        container = 
-        document.getElementById('ilanlar'); 
-        ilanlar.forEach(i 
-        => {
-            container.innerHTML 
-            += `<div 
-            class="bg-white 
-            p-4 
-            rounded 
-            shadow">
-                <h2 
-                class="font-bold">${i.baslik}</h2> 
-                <p 
-                class="text-green-600 
-                font-bold">${i.fiyat}</p>
-            </div>`;
-        });
-    </script> </body> 
-</html>
-
+    py-6">Cire 
+    Emlak</h1> <div 
+    class="max-w-md 
+    mx-auto p-4">
+        <a 
+        href="detay.html" 
+        class="block 
+        bg-white p-4 
+        rounded 
+        shadow">
+            <h2 
+            class="font-bold 
+            text-xl 
+            text-blue-900">ilan</h2> 
+            <p 
+            class="text-gray-500">Hacia 
+            Kif 
+            Satılık 
+            2+1</p>
+        </a> </div> 
+</body> </html>
