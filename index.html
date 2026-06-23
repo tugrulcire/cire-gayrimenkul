@@ -1,204 +1,84 @@
-<!DOCTYPE html> <html 
-lang="tr"> <head>
-    <meta 
-    charset="UTF-8"> 
-    <meta 
-    name="viewport" 
-    content="width=device-width, 
-    initial-scale=1.0"> 
-    <script 
-    src="https://cdn.tailwindcss.com"></script> 
-    <title>AHMET CİRE 
-    GAYRİMENKUL</title>
-</head> <body 
-class="bg-slate-50 
-p-4">
-    <!-- Ana Sayfa --> 
-    <div id="anaSayfa" 
-    class="max-w-xl 
-    mx-auto">
-        <h1 
-        class="text-2xl 
-        font-black 
-        text-center 
-        text-slate-950 
-        mb-8 uppercase 
-        tracking-widest">AHMET 
-        CİRE 
-        GAYRİMENKUL</h1>
-        
-        <!-- Fabrika 
-        Özet --> <div 
-        class="bg-white 
-        p-6 
-        rounded-3xl 
-        shadow-sm 
-        border mb-4">
-            <h2 
-            class="font-bold 
-            text-slate-900 
-            text-lg">AHMET 
-            CİRE - 
-            G.Y.D. 
-            FABRİKA</h2> 
-            <p 
-            class="text-amber-600 
-            font-bold 
-            mt-1">31.500.000 
-            TL</p> 
-            <button 
-            onclick="goster('fabrikaDetay')" 
-            class="mt-4 
-            w-full 
-            bg-slate-900 
-            text-white 
-            py-3 
-            rounded-2xl 
-            text-sm 
-            font-bold">İncele</button>
-        </div> <!-- 
-        Daire Özet --> 
-        <div 
-        class="bg-white 
-        p-6 
-        rounded-3xl 
-        shadow-sm 
-        border">
-            <h2 
-            class="font-bold 
-            text-slate-900 
-            text-lg">Göl 
-            Manzaralı 
-            2+1</h2> 
-            <p 
-            class="text-amber-600 
-            font-bold 
-            mt-1">18.000 
-            TL</p> 
-            <button 
-            onclick="goster('daireDetay')" 
-            class="mt-4 
-            w-full 
-            bg-slate-900 
-            text-white 
-            py-3 
-            rounded-2xl 
-            text-sm 
-            font-bold">İncele</button>
-        </div> </div> 
-    <!-- Fabrika Detay 
-    --> <div 
-    id="fabrikaDetay" 
-    class="hidden 
-    max-w-xl mx-auto 
-    bg-white p-8 
-    rounded-3xl 
-    shadow-sm border">
-        <button 
-        onclick="goster('anaSayfa')" 
-        class="text-slate-500 
-        font-bold">← 
-        Geri</button> 
-        <h1 
-        class="text-2xl 
-        font-bold 
-        mt-4">AHMET 
-        CİRE - G.Y.D. 
-        FABRİKA</h1> 
-        <p 
-        class="text-amber-600 
-        font-bold 
-        text-xl 
-        mt-2">31.500.000 
-        TL</p> <div 
-        class="mt-6 
-        space-y-3 
-        text-slate-700">
-            <p>• 
-            Kapalı 
-            Alan: 
-            1.030 
-            m²</p> 
-            <p>• Giriş 
-            Yük.: 11.0 
-            m</p>
-        </div> <a 
-        href="https://wa.me/905414652274?text=Selam, 
-        Ahmet bey - 
-        G.Y.D. Fabrika 
-        ilanınızla 
-        ilgileniyorum, 
-        detaylı bilgi 
-        almak 
-        istiyorum." 
-        class="block 
-        mt-8 
-        text-center 
-        bg-green-500 
-        text-white 
-        py-4 
-        rounded-2xl 
-        font-bold">WhatsApp'tan 
-        Bilgi Al</a>
-    </div> <!-- Daire 
-    Detay --> <div 
-    id="daireDetay" 
-    class="hidden 
-    max-w-xl mx-auto 
-    bg-white p-8 
-    rounded-3xl 
-    shadow-sm border">
-        <button 
-        onclick="goster('anaSayfa')" 
-        class="text-slate-500 
-        font-bold">← 
-        Geri</button> 
-        <h1 
-        class="text-2xl 
-        font-bold 
-        mt-4">Göl 
-        Manzaralı 
-        2+1</h1> <p 
-        class="text-amber-600 
-        font-bold 
-        text-xl 
-        mt-2">18.000 
-        TL</p> <div 
-        class="mt-6 
-        space-y-3 
-        text-slate-700">
-            <p>• Oda 
-            Sayısı: 
-            2+1</p> 
-            <p>• 
-            Durum: 
-            Kiralık</p>
-        </div> <a 
-        href="https://wa.me/905414652274?text=Selam, 
-        Ahmet bey - 
-        Göl Manzaralı 
-        2%2B1 
-        ilanınızla 
-        ilgileniyorum, 
-        detaylı bilgi 
-        almak 
-        istiyorum." 
-        class="block 
-        mt-8 
-        text-center 
-        bg-green-500 
-        text-white 
-        py-4 
-        rounded-2xl 
-        font-bold">WhatsApp'tan 
-        Bilgi Al</a>
-    </div> <script> 
-        function 
-        goster(id) {
-            document.getElementById('anaSayfa').classList.add('hidden'); 
-            document.getElementById('fabrikaDetay').classList.add('hidden'); 
-            document.getElementById('daireDetay').classList.add('hidden'); 
-            document.getElementById(id).classList.remove('hidden');
-        }
-    </script> </body> 
-</html>
+<!-- Daire Detay (Tüm 
+bilgiler eklenmiş 
+hali) --> <div 
+id="daireDetay" 
+class="hidden max-w-xl 
+mx-auto bg-white p-8 
+rounded-3xl shadow-sm 
+border">
+    <button 
+    onclick="goster('anaSayfa')" 
+    class="text-slate-500 
+    font-bold">← 
+    Geri</button> <h1 
+    class="text-2xl 
+    font-bold 
+    mt-4">Göl 
+    Manzaralı 2+1</h1> 
+    <p 
+    class="text-amber-600 
+    font-bold text-xl 
+    mt-2">18.000 
+    TL</p> <div 
+    class="mt-6 
+    space-y-2 
+    text-slate-700 
+    text-sm">
+        <p>• <b>İlan 
+        No:</b> 
+        1321616357</p> 
+        <p>• <b>Brüt 
+        m²:</b> 120 / 
+        <b>Net m²:</b> 
+        100</p> <p>• 
+        <b>Bina 
+        Yaşı:</b> 
+        1</p> <p>• 
+        <b>Kat:</b> 2 
+        / <b>Toplam 
+        Kat:</b> 4</p> 
+        <p>• 
+        <b>Isıtma:</b> 
+        Kombi 
+        (Doğalgaz)</p> 
+        <p>• 
+        <b>Banyo:</b> 
+        1 / 
+        <b>Mutfak:</b> 
+        Kapalı</p> 
+        <p>• 
+        <b>Balkon:</b> 
+        Var / 
+        <b>Asansör:</b> 
+        Var</p> <p>• 
+        <b>Otopark:</b> 
+        Açık 
+        Otopark</p> 
+        <p>• 
+        <b>Eşyalı:</b> 
+        Hayır / 
+        <b>Kullanım 
+        Durumu:</b> 
+        Boş</p> <p>• 
+        <b>Tapu 
+        Durumu:</b> 
+        Kat 
+        Mülkiyetli</p>
+    </div> <a 
+    href="https://wa.me/905414652274?text=Selam, 
+    Ahmet bey - Göl 
+    Manzaralı 2%2B1 
+    (İlan No: 
+    1321616357) 
+    ilanınızla 
+    ilgileniyorum, 
+    detaylı bilgi 
+    almak istiyorum." 
+    class="block mt-8 
+    text-center 
+    bg-green-500 
+    text-white py-4 
+    rounded-2xl 
+    font-bold">WhatsApp'tan 
+    Bilgi Al</a>
+</div>
