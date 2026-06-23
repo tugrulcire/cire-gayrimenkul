@@ -1,5 +1,6 @@
-<!DOCTYPE html> <html 
-lang="tr"> <head>
+```html <!DOCTYPE 
+html> <html lang="tr"> 
+<head>
     <meta 
     charset="UTF-8"> 
     <meta 
@@ -11,104 +12,245 @@ lang="tr"> <head>
     <title>İlan 
     Detayları</title>
 </head> <body 
-class="bg-slate-900 
-text-white p-6">
+class="bg-slate-50 
+min-h-screen pb-20">
     <div 
     class="max-w-md 
-    mx-auto 
-    bg-slate-800 p-6 
-    rounded-2xl border 
-    border-slate-700">
-        <h1 
-        class="text-xl 
-        font-bold mb-6 
-        text-amber-500">Ahmet 
-        CİRE-G.Y.D 
-        KİRALIK GÖL 
-        MANZARALI 
-        2+1</h1>
-        
-        <ul 
-        class="space-y-3 
-        text-slate-300">
-            <li><span 
-            class="font-bold 
-            text-white">Fiyat:</span> 
-            18.000 
-            TL</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Oda 
-            Sayısı:</span> 
-            2+1</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Brüt 
-            m²:</span> 
-            120</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Net 
-            m²:</span> 
-            100</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Bina 
-            Yaşı:</span> 
-            1</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Bulunduğu 
-            Kat:</span> 
-            2</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Kat 
-            Sayısı:</span> 
-            4</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Isıtma:</span> 
-            Kombi 
-            (Doğalgaz)</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Banyo:</span> 
-            1</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Balkon:</span> 
-            Var</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Asansör:</span> 
-            Var</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Otopark:</span> 
-            Açık</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Eşyalı:</span> 
-            Hayır</li> 
-            <li><span 
-            class="font-bold 
-            text-white">Kullanım 
-            Durumu:</span> 
-            Boş</li>
-        </ul> <div 
-        class="mt-8">
+    mx-auto bg-white 
+    min-h-screen 
+    shadow-lg">
+        <!-- Header: 
+        Geri ve Favori 
+        --> <div 
+        class="p-4 
+        flex 
+        justify-between 
+        items-center 
+        border-b">
             <a 
             href="index.html" 
+            class="text-slate-900 
+            font-bold">← 
+            Geri</a> 
+            <div 
+            class="flex 
+            items-center 
+            gap-3">
+                <span 
+                id="likeCount" 
+                class="text-sm 
+                text-slate-500 
+                font-medium">124 
+                Kişi 
+                beğendi</span> 
+                <button 
+                onclick="toggleFavorite(this)" 
+                id="favBtn" 
+                class="text-2xl 
+                transition">♡</button>
+            </div> 
+        </div> <div 
+        class="p-6">
+            <h1 
+            id="ilanAdi" 
+            class="text-2xl 
+            font-bold 
+            text-slate-950 
+            mb-1">Ahmet 
+            CİRE-G.Y.D 
+            KİRALIK 
+            GÖL 
+            MANZARALI 
+            2+1</h1> 
+            <p 
+            class="text-amber-600 
+            font-bold 
+            text-xl 
+            mb-6">18.000 
+            TL</p> 
+            <!-- Tüm 
+            Bilgiler 
+            Burada --> 
+            <div 
+            class="grid 
+            grid-cols-2 
+            gap-4 
+            text-sm 
+            mb-8">
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Oda 
+                Sayısı</p><p 
+                class="font-bold">2+1</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Brüt 
+                m²</p><p 
+                class="font-bold">120</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Net 
+                m²</p><p 
+                class="font-bold">100</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Bina 
+                Yaşı</p><p 
+                class="font-bold">1</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Kat</p><p 
+                class="font-bold">2 
+                / 
+                4</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Isıtma</p><p 
+                class="font-bold">Kombi</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Banyo</p><p 
+                class="font-bold">1</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Balkon</p><p 
+                class="font-bold">Var</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Asansör</p><p 
+                class="font-bold">Var</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Otopark</p><p 
+                class="font-bold">Açık</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Eşyalı</p><p 
+                class="font-bold">Hayır</p></div> 
+                <div 
+                class="bg-slate-50 
+                p-3 
+                rounded-xl 
+                border"><p 
+                class="text-slate-500">Durum</p><p 
+                class="font-bold">Boş</p></div>
+            </div> 
+            <!-- Satın 
+            Al 
+            (WhatsApp) 
+            Butonu --> 
+            <button 
+            onclick="sendWhatsApp()" 
             class="block 
             w-full 
-            bg-amber-600 
+            bg-green-600 
+            text-white 
             text-center 
-            py-3 
-            rounded-xl 
+            py-4 
+            rounded-2xl 
             font-bold 
-            hover:bg-amber-700 
-            transition">Geri 
-            Dön</a>
-        </div> </div> 
-</body> </html>
+            text-lg 
+            hover:bg-green-700 
+            transition 
+            shadow-lg">
+                Satın 
+                Al / 
+                Bilgi 
+                Al
+            </button> 
+        </div>
+    </div> <script> 
+        function 
+        toggleFavorite(btn) 
+        {
+            let 
+            countSpan 
+            = 
+            document.getElementById('likeCount'); 
+            let 
+            currentCount 
+            = 
+            parseInt(countSpan.innerText);
+            
+            if(btn.innerText 
+            === "♡") {
+                btn.innerText 
+                = "❤️"; 
+                countSpan.innerText 
+                = 
+                (currentCount 
+                + 1) + 
+                " Kişi 
+                beğendi";
+            } else {
+                btn.innerText 
+                = "♡"; 
+                countSpan.innerText 
+                = 
+                (currentCount 
+                - 1) + 
+                " Kişi 
+                beğendi";
+            }
+        }
+        function 
+        sendWhatsApp() 
+        {
+            const 
+            ilanAdi = 
+            document.getElementById('ilanAdi').innerText; 
+            const 
+            mesaj = 
+            `Selam! 
+            Ahmet Bey, 
+            "${ilanAdi}" 
+            binayı çok 
+            beğendim. 
+            Bu binayı 
+            satın 
+            almak 
+            istiyorum, 
+            bilgi 
+            verebilir 
+            misiniz?`; 
+            const url 
+            = 
+            `https://wa.me/905414652274?text=${encodeURIComponent(mesaj)}`; 
+            window.open(url, 
+            '_blank');
+        }
+    </script> </body> 
+</html> ```
