@@ -36,19 +36,17 @@ min-h-screen p-4">
         </header> <div 
         id="ilanListesi" 
         class="space-y-4">
-            <!-- 
-            Mevcut 
-            İlanlar 
-            --> <div 
+            <!-- 1. 
+            İlan --> 
+            <div 
             class="bg-white 
             p-5 
             rounded-3xl 
             border 
             border-slate-100 
             shadow-sm 
-            transition-transform 
-            active:scale-95 
-            cursor-pointer" 
+            cursor-pointer 
+            hover:bg-slate-50" 
             onclick="goster('detay1')">
                 <h2 
                 class="font-bold 
@@ -75,6 +73,8 @@ min-h-screen p-4">
                     #1321616357</span>
                 </div> 
             </div> 
+            <!-- 2. 
+            İlan --> 
             <div 
             class="bg-white 
             p-5 
@@ -82,9 +82,8 @@ min-h-screen p-4">
             border 
             border-slate-100 
             shadow-sm 
-            transition-transform 
-            active:scale-95 
-            cursor-pointer" 
+            cursor-pointer 
+            hover:bg-slate-50" 
             onclick="goster('detay2')">
                 <h2 
                 class="font-bold 
@@ -111,9 +110,8 @@ min-h-screen p-4">
                     #1300926546</span>
                 </div> 
             </div> 
-            <!-- 8 
-            Adet Boş 
-            İlan --> 
+            <!-- Diğer 
+            8 İlan --> 
             <script>
                 for(let 
                 i=3; 
@@ -127,9 +125,8 @@ min-h-screen p-4">
                         border 
                         border-slate-100 
                         shadow-sm 
-                        transition-transform 
-                        active:scale-95 
-                        cursor-pointer" 
+                        cursor-pointer 
+                        hover:bg-slate-50" 
                         onclick="goster('detay${i}')">
                             <h2 
                             class="font-bold 
@@ -148,7 +145,8 @@ min-h-screen p-4">
             </script> 
         </div>
     </div> <!-- DETAY 
-    EKRANLARI --> <div 
+    EKRANI (Başta 
+    gizli) --> <div 
     id="detayEkrani" 
     class="hidden 
     max-w-md mx-auto">
@@ -203,9 +201,10 @@ min-h-screen p-4">
                 <p><b>Isıtma:</b> 
                 Kombi 
                 (Doğalgaz)</p> 
-                <p><b>Balkon:</b> 
-                Var | 
-                <b>Asansör:</b> 
+                <p><b>Balkon 
+                / 
+                Asansör:</b> 
+                Var / 
                 Var</p> 
                 <p><b>Otopark:</b> 
                 Açık 
@@ -224,9 +223,11 @@ min-h-screen p-4">
             py-4 
             rounded-2xl 
             font-bold">WhatsApp'tan 
-            İletişime 
-            Geç</a>
-        </div> <div 
+            Bilgi 
+            Al</a>
+        </div> <!-- 
+        Detay 2 --> 
+        <div 
         id="detay2" 
         class="hidden 
         detay-kart 
@@ -289,11 +290,11 @@ min-h-screen p-4">
             py-4 
             rounded-2xl 
             font-bold">WhatsApp'tan 
-            İletişime 
-            Geç</a>
-        </div> <!-- 8 
-        Adet Boş Detay 
-        --> <script>
+            Bilgi 
+            Al</a>
+        </div> <!-- 
+        Detay 3-10 --> 
+        <script>
             for(let 
             i=3; 
             i<=10; 
@@ -354,8 +355,8 @@ min-h-screen p-4">
                         py-4 
                         rounded-2xl 
                         font-bold">WhatsApp'tan 
-                        İletişime 
-                        Geç</a>
+                        Bilgi 
+                        Al</a>
                     </div> 
                 `);
             }
