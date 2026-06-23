@@ -1,44 +1,214 @@
 <!DOCTYPE html> <html 
-lang="tr"> 
-<head><script 
-src="https://cdn.tailwindcss.com"></script></head> 
-<body 
+lang="tr"> <head>
+    <meta 
+    charset="UTF-8"> 
+    <meta 
+    name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0"> 
+    <script 
+    src="https://cdn.tailwindcss.com"></script> 
+    <title>AHMET CİRE 
+    GAYRİMENKUL</title>
+</head> <body 
 class="bg-slate-50 
-p-6">
-    <div 
-    class="max-w-2xl 
+p-4">
+    <!-- Ana Sayfa 
+    Bölümü --> <div 
+    id="anaSayfa" 
+    class="max-w-xl 
     mx-auto">
         <h1 
         class="text-2xl 
-        font-bold 
+        font-black 
         text-center 
-        mb-6">AHMET 
+        text-slate-950 
+        mb-8 uppercase 
+        tracking-widest">AHMET 
         CİRE 
-        GAYRİMENKUL</h1> 
+        GAYRİMENKUL</h1>
+        
+        <!-- Fabrika 
+        İlanı Özet --> 
         <div 
         class="bg-white 
-        p-4 rounded-xl 
+        p-6 
+        rounded-3xl 
+        shadow-sm 
         border mb-4">
-            <h3 
-            class="font-bold">AHMET 
+            <h2 
+            class="font-bold 
+            text-slate-900 
+            text-lg">AHMET 
             CİRE - 
             G.Y.D. 
-            FABRİKA</h3> 
-            <a 
-            href="detay-fabrika.html" 
-            class="text-blue-600 
-            underline">İncele</a>
-        </div> <div 
+            FABRİKA</h2> 
+            <p 
+            class="text-amber-600 
+            font-bold 
+            mt-1">31.500.000 
+            TL</p> 
+            <button 
+            onclick="goster('fabrikaDetay')" 
+            class="mt-4 
+            w-full 
+            bg-slate-900 
+            text-white 
+            py-3 
+            rounded-2xl 
+            text-sm 
+            font-bold">İncele</button>
+        </div> <!-- 
+        Daire İlanı 
+        Özet --> <div 
         class="bg-white 
-        p-4 rounded-xl 
+        p-6 
+        rounded-3xl 
+        shadow-sm 
         border">
-            <h3 
-            class="font-bold">Göl 
+            <h2 
+            class="font-bold 
+            text-slate-900 
+            text-lg">Göl 
             Manzaralı 
-            2+1</h3> 
-            <a 
-            href="detay-daire.html" 
-            class="text-blue-600 
-            underline">İncele</a>
+            2+1</h2> 
+            <p 
+            class="text-amber-600 
+            font-bold 
+            mt-1">18.000 
+            TL</p> 
+            <button 
+            onclick="goster('daireDetay')" 
+            class="mt-4 
+            w-full 
+            bg-slate-900 
+            text-white 
+            py-3 
+            rounded-2xl 
+            text-sm 
+            font-bold">İncele</button>
         </div> </div> 
-</body> </html>
+    <!-- Fabrika Detay 
+    Ekranı --> <div 
+    id="fabrikaDetay" 
+    class="hidden 
+    max-w-xl mx-auto 
+    bg-white p-8 
+    rounded-3xl 
+    shadow-sm border">
+        <button 
+        onclick="goster('anaSayfa')" 
+        class="text-slate-500 
+        font-bold">← 
+        Geri</button> 
+        <h1 
+        class="text-2xl 
+        font-bold 
+        mt-4">AHMET 
+        CİRE - G.Y.D. 
+        FABRİKA</h1> 
+        <p 
+        class="text-amber-600 
+        font-bold 
+        text-xl 
+        mt-2">31.500.000 
+        TL</p> <div 
+        class="mt-6 
+        space-y-3 
+        text-slate-700">
+            <p>• 
+            Kategori: 
+            İş 
+            Yeri</p> 
+            <p>• Açık 
+            Alan: 
+            1.000 
+            m²</p> 
+            <p>• 
+            Kapalı 
+            Alan: 
+            1.030 
+            m²</p> 
+            <p>• Bölüm 
+            Sayısı: 
+            9</p> <p>• 
+            Giriş 
+            Yük.: 11.0 
+            m</p> <p>• 
+            Bina Yaşı: 
+            0</p>
+        </div> <a 
+        href="tel:05414652274" 
+        class="block 
+        mt-8 
+        text-center 
+        bg-green-600 
+        text-white 
+        py-4 
+        rounded-2xl 
+        font-bold">İlan 
+        Hakkında Bilgi 
+        Al</a>
+    </div> <!-- Daire 
+    Detay Ekranı --> 
+    <div 
+    id="daireDetay" 
+    class="hidden 
+    max-w-xl mx-auto 
+    bg-white p-8 
+    rounded-3xl 
+    shadow-sm border">
+        <button 
+        onclick="goster('anaSayfa')" 
+        class="text-slate-500 
+        font-bold">← 
+        Geri</button> 
+        <h1 
+        class="text-2xl 
+        font-bold 
+        mt-4">Göl 
+        Manzaralı 
+        2+1</h1> <p 
+        class="text-amber-600 
+        font-bold 
+        text-xl 
+        mt-2">18.000 
+        TL</p> <div 
+        class="mt-6 
+        space-y-3 
+        text-slate-700">
+            <p>• 
+            Kategori: 
+            Konut</p> 
+            <p>• Oda 
+            Sayısı: 
+            2+1</p> 
+            <p>• 
+            Manzara: 
+            Beyşehir 
+            Gölü</p> 
+            <p>• 
+            Durum: 
+            Kiralık</p>
+        </div> <a 
+        href="tel:05414652274" 
+        class="block 
+        mt-8 
+        text-center 
+        bg-green-600 
+        text-white 
+        py-4 
+        rounded-2xl 
+        font-bold">İlan 
+        Hakkında Bilgi 
+        Al</a>
+    </div> <script> 
+        function 
+        goster(id) {
+            document.getElementById('anaSayfa').classList.add('hidden'); 
+            document.getElementById('fabrikaDetay').classList.add('hidden'); 
+            document.getElementById('daireDetay').classList.add('hidden'); 
+            document.getElementById(id).classList.remove('hidden');
+        }
+    </script> </body> 
+</html>
