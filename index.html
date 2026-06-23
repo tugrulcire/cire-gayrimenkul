@@ -16,7 +16,7 @@ p-4">
     <!-- Ana Sayfa --> 
     <div id="anaSayfa" 
     class="max-w-xl 
-    mx-auto block">
+    mx-auto">
         <h1 
         class="text-2xl 
         font-black 
@@ -27,229 +27,134 @@ p-4">
         CİRE 
         GAYRİMENKUL</h1>
         
+        <!-- İLAN 
+        LİSTESİ --> 
         <div 
-        class="bg-white 
-        p-6 
-        rounded-3xl 
-        shadow-sm 
-        border mb-4">
-            <h2 
-            class="font-bold 
-            text-slate-900 
-            text-lg">AHMET 
-            CİRE - 
-            G.Y.D. 
-            FABRİKA</h2> 
-            <p 
-            class="text-amber-600 
-            font-bold 
-            mt-1">31.500.000 
-            TL</p> 
-            <button 
-            onclick="goster('fabrikaDetay')" 
-            class="mt-4 
-            w-full 
-            bg-slate-900 
-            text-white 
-            py-3 
-            rounded-2xl 
-            text-sm 
-            font-bold">İncele</button>
-        </div> <div 
-        class="bg-white 
-        p-6 
+        id="ilanListesi" 
+        class="space-y-4">
+            <!-- 
+            İlanları 
+            buraya 
+            ekleyeceksin 
+            --> <div 
+            class="bg-white 
+            p-6 
+            rounded-3xl 
+            shadow-sm 
+            border" 
+            onclick="goster('fabrikaDetay')">
+                <h2 
+                class="font-bold 
+                text-slate-900 
+                text-lg">AHMET 
+                CİRE - 
+                G.Y.D. 
+                FABRİKA</h2> 
+                <p 
+                class="text-amber-600 
+                font-bold 
+                mt-1">31.500.000 
+                TL</p>
+            </div> 
+            <div 
+            class="bg-white 
+            p-6 
+            rounded-3xl 
+            shadow-sm 
+            border" 
+            onclick="goster('daireDetay')">
+                <h2 
+                class="font-bold 
+                text-slate-900 
+                text-lg">Göl 
+                Manzaralı 
+                2+1</h2> 
+                <p 
+                class="text-amber-600 
+                font-bold 
+                mt-1">18.000 
+                TL</p>
+            </div> 
+        </div>
+    </div> <!-- 
+    Detaylar (GİZLİ 
+    TUTULUR) --> <div 
+    id="detayAlani">
+        <div 
+        id="fabrikaDetay" 
+        class="hidden 
+        max-w-xl 
+        mx-auto 
+        bg-white p-8 
         rounded-3xl 
         shadow-sm 
         border">
-            <h2 
-            class="font-bold 
-            text-slate-900 
-            text-lg">Göl 
-            Manzaralı 
-            2+1</h2> 
-            <p 
-            class="text-amber-600 
-            font-bold 
-            mt-1">18.000 
-            TL</p> 
             <button 
-            onclick="goster('daireDetay')" 
-            class="mt-4 
-            w-full 
-            bg-slate-900 
-            text-white 
-            py-3 
-            rounded-2xl 
-            text-sm 
-            font-bold">İncele</button>
+            onclick="goster('anaSayfa')" 
+            class="text-slate-500 
+            font-bold">← 
+            Geri</button> 
+            <h1 
+            class="text-2xl 
+            font-bold 
+            mt-4">AHMET 
+            CİRE - 
+            G.Y.D. 
+            FABRİKA</h1> 
+            <!-- 
+            ...Fabrika 
+            detay 
+            içeriği 
+            buraya... 
+            -->
+        </div> <div 
+        id="daireDetay" 
+        class="hidden 
+        max-w-xl 
+        mx-auto 
+        bg-white p-8 
+        rounded-3xl 
+        shadow-sm 
+        border">
+            <button 
+            onclick="goster('anaSayfa')" 
+            class="text-slate-500 
+            font-bold">← 
+            Geri</button> 
+            <h1 
+            class="text-2xl 
+            font-bold 
+            mt-4">Göl 
+            Manzaralı 
+            2+1</h1> 
+            <!-- 
+            ...Daire 
+            detay 
+            içeriği 
+            buraya... 
+            -->
         </div> </div> 
-    <!-- Fabrika Detay 
-    --> <div 
-    id="fabrikaDetay" 
-    class="hidden 
-    max-w-xl mx-auto 
-    bg-white p-8 
-    rounded-3xl 
-    shadow-sm border">
-        <button 
-        onclick="goster('anaSayfa')" 
-        class="text-slate-500 
-        font-bold">← 
-        Geri</button> 
-        <h1 
-        class="text-2xl 
-        font-bold 
-        mt-4">AHMET 
-        CİRE - G.Y.D. 
-        FABRİKA</h1> 
-        <p 
-        class="text-amber-600 
-        font-bold 
-        text-xl 
-        mt-2">31.500.000 
-        TL</p> <div 
-        class="mt-6 
-        space-y-2 
-        text-slate-700 
-        text-sm">
-            <p>• 
-            <b>İlan 
-            No:</b> 
-            1300926546</p> 
-            <p>• 
-            <b>Açık 
-            Alan:</b> 
-            1.000 m² | 
-            <b>Kapalı 
-            Alan:</b> 
-            1.030 
-            m²</p> 
-            <p>• 
-            <b>Bölüm:</b> 
-            9 | 
-            <b>Kat:</b> 
-            3</p> <p>• 
-            <b>Yükseklik:</b> 
-            11.0 m | 
-            <b>Bina 
-            Yaşı:</b> 
-            0</p> <p>• 
-            <b>Isıtma:</b> 
-            Yok | 
-            <b>Durum:</b> 
-            Boş</p> 
-            <p>• 
-            <b>Tapu:</b> 
-            Kat 
-            Mülkiyetli 
-            | <b>Zemin 
-            Etüdü:</b> 
-            Var</p>
-        </div> <a 
-        href="https://wa.me/905414652274?text=Selam, 
-        Ahmet bey - 
-        G.Y.D. Fabrika 
-        (İlan No: 
-        1300926546) 
-        ilanınızla 
-        ilgileniyorum." 
-        class="block 
-        mt-8 
-        text-center 
-        bg-green-500 
-        text-white 
-        py-4 
-        rounded-2xl 
-        font-bold">WhatsApp'tan 
-        Bilgi Al</a>
-    </div> <!-- Daire 
-    Detay --> <div 
-    id="daireDetay" 
-    class="hidden 
-    max-w-xl mx-auto 
-    bg-white p-8 
-    rounded-3xl 
-    shadow-sm border">
-        <button 
-        onclick="goster('anaSayfa')" 
-        class="text-slate-500 
-        font-bold">← 
-        Geri</button> 
-        <h1 
-        class="text-2xl 
-        font-bold 
-        mt-4">Göl 
-        Manzaralı 
-        2+1</h1> <p 
-        class="text-amber-600 
-        font-bold 
-        text-xl 
-        mt-2">18.000 
-        TL</p> <div 
-        class="mt-6 
-        space-y-2 
-        text-slate-700 
-        text-sm">
-            <p>• 
-            <b>İlan 
-            No:</b> 
-            1321616357</p> 
-            <p>• 
-            <b>Brüt:</b> 
-            120 m² | 
-            <b>Net:</b> 
-            100 m²</p> 
-            <p>• 
-            <b>Kat:</b> 
-            2 / 4 | 
-            <b>Bina 
-            Yaşı:</b> 
-            1</p> <p>• 
-            <b>Isıtma:</b> 
-            Kombi 
-            (Doğalgaz)</p> 
-            <p>• 
-            <b>Banyo:</b> 
-            1 | 
-            <b>Mutfak:</b> 
-            Kapalı</p> 
-            <p>• 
-            <b>Balkon:</b> 
-            Var | 
-            <b>Asansör:</b> 
-            Var</p> 
-            <p>• 
-            <b>Otopark:</b> 
-            Açık | 
-            <b>Tapu:</b> 
-            Kat 
-            Mülkiyetli</p>
-        </div> <a 
-        href="https://wa.me/905414652274?text=Selam, 
-        Ahmet bey - 
-        Göl Manzaralı 
-        2%2B1 (İlan 
-        No: 
-        1321616357) 
-        ilanınızla 
-        ilgileniyorum." 
-        class="block 
-        mt-8 
-        text-center 
-        bg-green-500 
-        text-white 
-        py-4 
-        rounded-2xl 
-        font-bold">WhatsApp'tan 
-        Bilgi Al</a>
-    </div> <script> 
+    <script>
         function 
         goster(id) {
+            // Ana 
+            // sayfayı 
+            // ve tüm 
+            // detayları 
+            // gizle
             document.getElementById('anaSayfa').classList.add('hidden'); 
             document.getElementById('fabrikaDetay').classList.add('hidden'); 
-            document.getElementById('daireDetay').classList.add('hidden'); 
-            document.getElementById(id).classList.remove('hidden'); 
-            document.getElementById(id).classList.add('block');
+            document.getElementById('daireDetay').classList.add('hidden');
+            
+            // Seçileni 
+            // göster
+            if(id === 
+            'anaSayfa') 
+            {
+                document.getElementById('anaSayfa').classList.remove('hidden');
+            } else {
+                document.getElementById(id).classList.remove('hidden');
+            }
         }
     </script> </body> 
 </html>
