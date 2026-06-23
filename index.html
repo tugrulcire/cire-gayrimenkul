@@ -1,6 +1,5 @@
- html <!DOCTYPE html> 
-<html lang="tr"> 
-<head>
+<!DOCTYPE html> <html 
+lang="tr"> <head>
     <meta 
     charset="UTF-8"> 
     <meta 
@@ -34,7 +33,6 @@ min-h-screen p-4">
             font-medium">Gayrimenkul 
             Portföyü</p>
         </header> <div 
-        id="ilanListesi" 
         class="space-y-4">
             <!-- 1. 
             İlan --> 
@@ -62,15 +60,7 @@ min-h-screen p-4">
                     class="text-emerald-600 
                     font-black 
                     text-lg">18.000 
-                    TL</span> 
-                    <span 
-                    class="text-xs 
-                    bg-slate-100 
-                    px-2 
-                    py-1 
-                    rounded-md 
-                    text-slate-600">İlan 
-                    #1321616357</span>
+                    TL</span>
                 </div> 
             </div> 
             <!-- 2. 
@@ -99,54 +89,12 @@ min-h-screen p-4">
                     class="text-emerald-600 
                     font-black 
                     text-lg">31.500.000 
-                    TL</span> 
-                    <span 
-                    class="text-xs 
-                    bg-slate-100 
-                    px-2 
-                    py-1 
-                    rounded-md 
-                    text-slate-600">İlan 
-                    #1300926546</span>
+                    TL</span>
                 </div> 
-            </div> 
-            <!-- Diğer 
-            8 İlan --> 
-            <script>
-                for(let 
-                i=3; 
-                i<=10; 
-                i++) {
-                    document.write(` 
-                        <div 
-                        class="bg-white 
-                        p-5 
-                        rounded-3xl 
-                        border 
-                        border-slate-100 
-                        shadow-sm 
-                        cursor-pointer 
-                        hover:bg-slate-50" 
-                        onclick="goster('detay${i}')">
-                            <h2 
-                            class="font-bold 
-                            text-slate-900">Yeni 
-                            İlan 
-                            ${i-2}</h2> 
-                            <p 
-                            class="text-slate-400 
-                            text-sm 
-                            mt-1">Bilgiler 
-                            girilmeyi 
-                            bekliyor...</p>
-                        </div> 
-                    `);
-                }
-            </script> 
-        </div>
-    </div> <!-- DETAY 
-    EKRANI (Başta 
-    gizli) --> <div 
+            </div>
+        </div> </div> 
+    <!-- DETAY EKRANI 
+    --> <div 
     id="detayEkrani" 
     class="hidden 
     max-w-md mx-auto">
@@ -184,20 +132,6 @@ min-h-screen p-4">
             class="space-y-3 
             text-sm 
             text-slate-700">
-                <p><b>İlan 
-                No:</b> 
-                1321616357</p> 
-                <p><b>Brüt 
-                / 
-                Net:</b> 
-                120 m² 
-                / 100 
-                m²</p> 
-                <p><b>Kat:</b> 
-                2/4 | 
-                <b>Bina 
-                Yaşı:</b> 
-                1</p> 
                 <p><b>Isıtma:</b> 
                 Kombi 
                 (Doğalgaz)</p> 
@@ -209,22 +143,7 @@ min-h-screen p-4">
                 <p><b>Otopark:</b> 
                 Açık 
                 Otopark</p>
-            </div> <a 
-            href="https://wa.me/905414652274?text=Selam, 
-            1321616357 
-            nolu 
-            daireyle 
-            ilgileniyorum." 
-            class="block 
-            mt-8 
-            bg-slate-950 
-            text-white 
-            text-center 
-            py-4 
-            rounded-2xl 
-            font-bold">WhatsApp'tan 
-            Bilgi 
-            Al</a>
+            </div> 
         </div> <!-- 
         Detay 2 --> 
         <div 
@@ -250,9 +169,6 @@ min-h-screen p-4">
             class="space-y-3 
             text-sm 
             text-slate-700">
-                <p><b>İlan 
-                No:</b> 
-                1300926546</p> 
                 <p><b>Açık 
                 Alan:</b> 
                 1.000 
@@ -267,113 +183,34 @@ min-h-screen p-4">
                 3</p> 
                 <p><b>Giriş 
                 Yüksekliği:</b> 
-                11.0m</p> 
-                <p><b>Bina 
-                Yaşı:</b> 
-                0</p> 
-                <p><b>Tapu 
-                Durumu:</b> 
-                Kat 
-                Mülkiyetli</p>
-            </div> <a 
-            href="https://wa.me/905414652274?text=Selam, 
-            1300926546 
-            nolu 
-            fabrika 
-            ile 
-            ilgileniyorum." 
-            class="block 
-            mt-8 
-            bg-slate-950 
-            text-white 
-            text-center 
-            py-4 
-            rounded-2xl 
-            font-bold">WhatsApp'tan 
-            Bilgi 
-            Al</a>
-        </div> <!-- 
-        Detay 3-10 --> 
-        <script>
-            for(let 
-            i=3; 
-            i<=10; 
-            i++) {
-                document.write(` 
-                    <div 
-                    id="detay${i}" 
-                    class="hidden 
-                    detay-kart 
-                    bg-white 
-                    p-6 
-                    rounded-3xl 
-                    border 
-                    shadow-sm">
-                        <h1 
-                        class="text-2xl 
-                        font-black 
-                        text-slate-950">Yeni 
-                        İlan 
-                        ${i-2}</h1> 
-                        <div 
-                        class="space-y-3 
-                        text-sm 
-                        text-slate-700 
-                        my-6">
-                            <p><b>İlan 
-                            No:</b> 
-                            </p> 
-                            <p><b>Açık 
-                            Alan:</b> 
-                            m² 
-                            | 
-                            <b>Kapalı 
-                            Alan:</b> 
-                            m²</p> 
-                            <p><b>Bölüm:</b> 
-                            | 
-                            <b>Kat 
-                            Sayısı:</b> 
-                            </p> 
-                            <p><b>Giriş 
-                            Yükseklik:</b> 
-                            </p> 
-                            <p><b>Bina 
-                            Yaşı:</b> 
-                            </p> 
-                            <p><b>Tapu 
-                            Durumu:</b> 
-                            </p>
-                        </div> 
-                        <a 
-                        href="https://wa.me/905414652274" 
-                        class="block 
-                        mt-8 
-                        bg-slate-950 
-                        text-white 
-                        text-center 
-                        py-4 
-                        rounded-2xl 
-                        font-bold">WhatsApp'tan 
-                        Bilgi 
-                        Al</a>
-                    </div> 
-                `);
-            }
-        </script> 
-    </div> <script>
+                11.0m</p>
+            </div> 
+        </div>
+    </div> <script> 
         function 
         goster(id) {
-            document.getElementById('anaSayfa').classList.add('hidden'); 
-            document.getElementById('detayEkrani').classList.remove('hidden'); 
-            document.querySelectorAll('.detay-kart').forEach(kart 
-            => 
-            kart.classList.add('hidden')); 
-            document.getElementById(id).classList.remove('hidden');
+            document.getElementById('anaSayfa').style.display 
+            = 'none'; 
+            document.getElementById('detayEkrani').classList.remove('hidden');
+            
+            var 
+            kartlar = 
+            document.getElementsByClassName('detay-kart'); 
+            for (var i 
+            = 0; i < 
+            kartlar.length; 
+            i++) {
+                kartlar[i].style.display 
+                = 
+                'none';
+            }
+            document.getElementById(id).style.display 
+            = 'block';
         }
         function 
         kapat() {
-            document.getElementById('anaSayfa').classList.remove('hidden'); 
+            document.getElementById('anaSayfa').style.display 
+            = 'block'; 
             document.getElementById('detayEkrani').classList.add('hidden');
         }
     </script> </body> 
