@@ -1,59 +1,291 @@
-<!-- Güncellenmiş 
-Detay 2 --> <div 
-id="detay2" 
-class="hidden 
-detay-kart bg-white 
-p-8 rounded-3xl border 
-shadow-sm space-y-4">
-    <h1 
-    class="text-2xl 
-    font-black 
-    text-slate-950">AHMET 
-    CİRE - G.Y.D. 
-    FABRİKA</h1> <p 
-    class="text-orange-600 
-    font-bold 
-    text-2xl">31.500.000 
-    TL</p> <div 
-    class="space-y-3 
-    text-sm 
-    text-slate-600 
-    border-t pt-4">
-        <p>• <b>İlan 
-        No:</b> 
-        1300926546</p> 
-        <p>• <b>Açık 
-        Alan:</b> 
-        1.000 m² | 
-        <b>Kapalı 
-        Alan:</b> 
-        1.030 m²</p> 
-        <p>• 
-        <b>Bölüm:</b> 
-        9 | <b>Kat 
-        Sayısı:</b> 
-        3</p> <p>• 
-        <b>Giriş 
-        Yükseklik:</b> 
-        11.0 m</p> 
-        <p>• <b>Bina 
-        Yaşı:</b> 0 
-        (Sıfır)</p> 
-        <p>• <b>Tapu 
-        Durumu:</b> 
-        Kat 
-        Mülkiyetli</p>
-    </div> <a 
-    href="https://wa.me/905414652274?text=Selam, 
-    1300926546 nolu 
-    fabrika ile 
-    ilgileniyorum." 
-    class="block 
-    bg-green-500 
-    text-white 
-    text-center py-4 
-    rounded-2xl 
-    font-bold 
-    mt-6">WhatsApp'tan 
-    Bilgi Al</a>
-</div>
+html <!DOCTYPE html> 
+<html lang="tr"> 
+<head>
+    <meta 
+    charset="UTF-8"> 
+    <meta 
+    name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0"> 
+    <script 
+    src="https://cdn.tailwindcss.com"></script> 
+    <title>AHMET CİRE 
+    GAYRİMENKUL</title>
+</head> <body 
+class="bg-slate-50 
+min-h-screen p-4">
+    <!-- ANA MENÜ --> 
+    <div id="anaSayfa" 
+    class="max-w-md 
+    mx-auto">
+        <header 
+        class="mb-8 
+        mt-4 
+        text-center">
+            <h1 
+            class="text-3xl 
+            font-black 
+            text-slate-950 
+            uppercase 
+            tracking-tighter">Ahmet 
+            Cire</h1> 
+            <p 
+            class="text-slate-500 
+            font-medium">Gayrimenkul 
+            Portföyü</p>
+        </header> <div 
+        id="ilanListesi" 
+        class="space-y-4">
+            <!-- 1. 
+            İlan --> 
+            <div 
+            class="bg-white 
+            p-5 
+            rounded-3xl 
+            border 
+            border-slate-100 
+            shadow-sm 
+            cursor-pointer 
+            hover:bg-slate-50" 
+            onclick="goster('detay1')">
+                <h2 
+                class="font-bold 
+                text-slate-900">Göl 
+                Manzaralı 
+                2+1</h2> 
+                <div 
+                class="flex 
+                justify-between 
+                items-center 
+                mt-2">
+                    <span 
+                    class="text-emerald-600 
+                    font-black 
+                    text-lg">18.000 
+                    TL</span>
+                </div> 
+            </div> 
+            <!-- 2. 
+            İlan --> 
+            <div 
+            class="bg-white 
+            p-5 
+            rounded-3xl 
+            border 
+            border-slate-100 
+            shadow-sm 
+            cursor-pointer 
+            hover:bg-slate-50" 
+            onclick="goster('detay2')">
+                <h2 
+                class="font-bold 
+                text-slate-900">AHMET 
+                CİRE - 
+                G.Y.D. 
+                FABRİKA</h2> 
+                <div 
+                class="flex 
+                justify-between 
+                items-center 
+                mt-2">
+                    <span 
+                    class="text-emerald-600 
+                    font-black 
+                    text-lg">31.500.000 
+                    TL</span>
+                </div> 
+            </div>
+        </div> </div> 
+    <!-- DETAY EKRANI 
+    --> <div 
+    id="detayEkrani" 
+    class="hidden 
+    max-w-md mx-auto">
+        <button 
+        onclick="kapat()" 
+        class="mb-6 
+        font-bold 
+        text-slate-500 
+        hover:text-slate-900">← 
+        Geri</button>
+        
+        <!-- Detay 1 
+        --> <div 
+        id="detay1" 
+        class="hidden 
+        detay-kart 
+        bg-white p-8 
+        rounded-3xl 
+        border 
+        shadow-sm 
+        space-y-4">
+            <h1 
+            class="text-2xl 
+            font-black 
+            text-slate-950">Göl 
+            Manzaralı 
+            2+1</h1> 
+            <p 
+            class="text-orange-600 
+            font-bold 
+            text-2xl">18.000 
+            TL</p> 
+            <div 
+            class="space-y-3 
+            text-sm 
+            text-slate-600 
+            border-t 
+            pt-4">
+                <p>• 
+                <b>İlan 
+                No:</b> 
+                1321616357</p> 
+                <p>• 
+                <b>Brüt:</b> 
+                120 m² 
+                | 
+                <b>Net:</b> 
+                100 
+                m²</p> 
+                <p>• 
+                <b>Kat:</b> 
+                2 / 4 
+                | 
+                <b>Bina 
+                Yaşı:</b> 
+                1</p> 
+                <p>• 
+                <b>Isıtma:</b> 
+                Kombi 
+                (Doğalgaz)</p> 
+                <p>• 
+                <b>Balkon:</b> 
+                Var | 
+                <b>Asansör:</b> 
+                Var</p> 
+                <p>• 
+                <b>Otopark:</b> 
+                Açık 
+                Otopark</p>
+            </div> <a 
+            href="https://wa.me/905414652274?text=Selam, 
+            1321616357 
+            nolu 
+            daireyle 
+            ilgileniyorum." 
+            class="block 
+            bg-green-500 
+            text-white 
+            text-center 
+            py-4 
+            rounded-2xl 
+            font-bold 
+            mt-6">WhatsApp'tan 
+            Bilgi 
+            Al</a>
+        </div> <!-- 
+        Detay 2 --> 
+        <div 
+        id="detay2" 
+        class="hidden 
+        detay-kart 
+        bg-white p-8 
+        rounded-3xl 
+        border 
+        shadow-sm 
+        space-y-4">
+            <h1 
+            class="text-2xl 
+            font-black 
+            text-slate-950">AHMET 
+            CİRE - 
+            G.Y.D. 
+            FABRİKA</h1> 
+            <p 
+            class="text-orange-600 
+            font-bold 
+            text-2xl">31.500.000 
+            TL</p> 
+            <div 
+            class="space-y-3 
+            text-sm 
+            text-slate-600 
+            border-t 
+            pt-4">
+                <p>• 
+                <b>İlan 
+                No:</b> 
+                1300926546</p> 
+                <p>• 
+                <b>Açık 
+                Alan:</b> 
+                1.000 
+                m² | 
+                <b>Kapalı 
+                Alan:</b> 
+                1.030 
+                m²</p> 
+                <p>• 
+                <b>Bölüm:</b> 
+                9 | 
+                <b>Kat 
+                Sayısı:</b> 
+                3</p> 
+                <p>• 
+                <b>Giriş 
+                Yükseklik:</b> 
+                11.0 
+                m</p> 
+                <p>• 
+                <b>Bina 
+                Yaşı:</b> 
+                0 
+                (Sıfır)</p> 
+                <p>• 
+                <b>Tapu 
+                Durumu:</b> 
+                Kat 
+                Mülkiyetli</p>
+            </div> <a 
+            href="https://wa.me/905414652274?text=Selam, 
+            1300926546 
+            nolu 
+            fabrika 
+            ile 
+            ilgileniyorum." 
+            class="block 
+            bg-green-500 
+            text-white 
+            text-center 
+            py-4 
+            rounded-2xl 
+            font-bold 
+            mt-6">WhatsApp'tan 
+            Bilgi 
+            Al</a>
+        </div> </div> 
+    <script>
+        function 
+        goster(id) {
+            document.getElementById('anaSayfa').style.display 
+            = 'none'; 
+            document.getElementById('detayEkrani').classList.remove('hidden'); 
+            let 
+            kartlar = 
+            document.getElementsByClassName('detay-kart'); 
+            for (let k 
+            of 
+            kartlar) 
+            k.style.display 
+            = 'none'; 
+            document.getElementById(id).style.display 
+            = 'block';
+        }
+        function 
+        kapat() {
+            document.getElementById('anaSayfa').style.display 
+            = 'block'; 
+            document.getElementById('detayEkrani').classList.add('hidden');
+        }
+    </script> </body>
+</html
